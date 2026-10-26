@@ -41,7 +41,7 @@ The catalogue and cart work without database configuration, using the sample ite
 
 ## Authentication upgrade — Email + Google + Phone OTP
 
-The login modal now supports existing email/password authentication, Google OAuth, and SMS OTP. All use Supabase Auth, so existing `profiles` and RLS continue to work. A phone-only account may not have an email; the inquiry form still requires a contact phone number.
+The login modal supports email/password authentication and Google OAuth; mobile SMS OTP has been removed. All use Supabase Auth, so existing `profiles` and RLS continue to work. The inquiry form still requires a customer contact phone number. After successful submission, a confirmation dialog displays MARK FASHION contact number +91 97905 90980 and a WhatsApp link.
 
 ### Google
 
@@ -106,3 +106,11 @@ join auth.users u on u.id=p.id where u.email='owner@your-real-domain';
 - **H. Inventory/fabric availability** and per-product manufacturing lead times.
 - **I. Multilingual storefront** (English/Tamil) and accessibility improvements.
 - **J. Admin MFA, audit trail, CAPTCHA and abuse controls** (recommended before launch).
+
+
+## Recent updates
+- Site footer displays +91 97905 90980 with call and WhatsApp links.
+- Signed-in customers can use **My Orders** to see their own previous inquiries, item specifications, dates and statuses. This uses the existing `inquiries` table and its customer-owned row-level security policy. No schema migration is required for this feature.
+- Fabric library now uses six actual fabric sample photographs cropped from page 3 of `MARK_FASHION_final.pdf` (supplied by the project owner), replacing generated textures.
+- Product image framing uses `object-fit: contain` so shirts sit comfortably above the card text instead of being enlarged/cropped.
+- These are quotation inquiries, not paid orders.
