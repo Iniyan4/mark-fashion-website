@@ -407,10 +407,10 @@ export default function Home() {
         <footer>
             <div className="shell footer-grid">
                 <div><strong className="footer-logo">MARK FASHION</strong><p>Custom T-shirts • Jerseys • Printing</p>
-                    <small>CONTIGO EM TODO LADO</small><a className="contact-phone" href="tel:+919344288078">Call: +91
-                        93442 88078</a><a href="mailto:markfashionglobal@gmail.com">Email:
-                        markfashionglobal@gmail.com</a><a href="https://wa.me/919344288078" target="_blank"
-                                                          rel="noopener noreferrer">WhatsApp: +91 93442 88078</a></div>
+                    <small>CONTIGO EM TODO LADO</small><a className="contact-phone" href="tel:+919790590980">Call: +91
+                        97905 90980</a><a href="mailto:markfashionglobal@gmail.com">Email:
+                        markfashionglobal@gmail.com</a><a href="https://wa.me/919790590980" target="_blank"
+                                                          rel="noopener noreferrer">WhatsApp: +91 97905 90980</a></div>
                 <div><strong>Explore</strong><a href="#collection">Collection</a><a href="#custom">Bulk Orders</a><a
                     href="#fabrics">Fabric Library</a>{user &&
                     <button className="footer-order-link" onClick={openMyOrders}>My Orders</button>}</div>
@@ -511,7 +511,7 @@ export default function Home() {
                             <button className="btn dark-btn full-btn" disabled={loading}
                                     onClick={submitInquiry}>{loading ? 'Sending...' : user ? 'Send Inquiry to MARK FASHION' : 'Log in & Request Quote'}
                                 <ArrowRight size={17}/></button>
-                            <p className="fineprint">Need help? Call <a href="tel:+919344288078">+91 93442 88078</a> or
+                            <p className="fineprint">Need help? Call <a href="tel:+919790590980">+91 97905 90980</a> or
                                 email <a href="mailto:markfashionglobal@gmail.com">markfashionglobal@gmail.com</a>.</p>
                             <p className="fineprint">No online payment. The manufacturer will review and confirm
                                 pricing, availability and lead time.</p></div>
@@ -556,9 +556,9 @@ export default function Home() {
                     <button className="icon-btn" aria-label="Close" onClick={() => setSubmitted(false)}><X/></button>
                 </div>
                 <p>Thank you! MARK FASHION has received your inquiry. For questions or follow-up, contact us at:</p><p>
-                <strong><a href="tel:+919344288078">+91 93442 88078</a></strong></p><p><a
+                <strong><a href="tel:+919790590980">+91 97905 90980</a></strong></p><p><a
                 href="mailto:markfashionglobal@gmail.com">markfashionglobal@gmail.com</a></p><p><a
-                href="https://wa.me/919344288078" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
+                href="https://wa.me/919790590980" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
                 <button className="btn dark-btn full-btn" onClick={() => setSubmitted(false)}>Done</button>
             </div>
         </div>}
@@ -592,7 +592,7 @@ export default function Home() {
                             · {item.fabric} · {item.gsm} GSM · {item.color} · {item.size} · {item.printing}</li>)}</ul>
                         {order.delivery_location && <p>Delivery location: {order.delivery_location}</p>}{order.notes &&
                         <p>Notes: {order.notes}</p>}</article>)}</div>}
-                <div className="orders-footer"><a href="tel:+919344288078">Questions? Call +91 93442 88078</a>
+                <div className="orders-footer"><a href="tel:+919790590980">Questions? Call +91 97905 90980</a>
                     <button className="btn dark-btn" onClick={openMyOrders} disabled={ordersLoading}>Refresh</button>
                 </div>
             </div>
